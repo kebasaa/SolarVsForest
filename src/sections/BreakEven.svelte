@@ -16,7 +16,14 @@
     LW_ESCAPE_FRACTION,
     type Fuel
   } from '../lib/model/constants';
-  import { FOREST_DRYLAND_HIGH, FOREST_YATIR, pvDrylands, type Zone } from '../lib/model/presets';
+  import {
+    FOREST_DRYLAND_HIGH,
+    FOREST_TEMPERATE,
+    FOREST_TROPICAL,
+    FOREST_YATIR,
+    pvDrylands,
+    type Zone
+  } from '../lib/model/presets';
   import { FOREST_VARIANT_LABEL, resolveScenario, type ForestVariant, type Kind } from '../lib/model/scenario';
   import { TABLE2 } from '../lib/data/paper';
   import { fmt, fmtSig, pct, sci, sup } from '../lib/util/format';
@@ -70,11 +77,46 @@
   ];
 
   // reference series in the race chart (paper defaults)
+  // fixed reference curves (paper defaults): all fossil-fuel cases of Table 2 and the three
+  // afforestation climate zones of Tables 2–3
+  const PV_GROUP = 'PV field (Ketura), electricity replaced';
+  const FOREST_GROUP = 'Afforestation (planted forest)';
+  const FUEL_DASH: Record<Fuel, string | undefined> = { coal: undefined, oil: '9 4', gas: '2 4', world: '10 3 2 3' };
   const refs: RaceSeries[] = [
-    { id: 'coal', label: 'PV · coal', bet: computeBet(pvDrylands('coal')).bet, color: 'var(--lime)' },
-    { id: 'gas', label: 'PV · gas', bet: computeBet(pvDrylands('gas')).bet, color: 'var(--lime)' },
-    { id: 'f94', label: 'Forest · 94', bet: computeBet(FOREST_DRYLAND_HIGH.inputs).bet, color: 'var(--amber)' },
-    { id: 'f185', label: 'Forest · 185', bet: computeBet(FOREST_YATIR.inputs).bet, color: 'var(--amber)' }
+    ...FUELS.map((f) => ({
+      id: `pv-${f}`,
+      label: FUEL_LABEL[f],
+      bet: computeBet(pvDrylands(f)).bet,
+      color: 'var(--lime)',
+      dash: FUEL_DASH[f],
+      group: PV_GROUP
+    })),
+    {
+      id: 'forest-drylands',
+      label: 'Drylands',
+      betLow: computeBet(FOREST_DRYLAND_HIGH.inputs).bet,
+      bet: computeBet(FOREST_YATIR.inputs).bet,
+      betLabel: '94–185 yr',
+      color: 'var(--amber)',
+      direct: true,
+      group: FOREST_GROUP
+    },
+    {
+      id: 'forest-temperate',
+      label: 'Temperate',
+      bet: computeBet(FOREST_TEMPERATE.inputs).bet,
+      color: 'var(--pine)',
+      direct: true,
+      group: FOREST_GROUP
+    },
+    {
+      id: 'forest-tropical',
+      label: 'Tropical',
+      bet: computeBet(FOREST_TROPICAL.inputs).bet,
+      color: 'var(--cyan)',
+      direct: true,
+      group: FOREST_GROUP
+    }
   ];
   const series = $derived<RaceSeries[]>([
     ...refs,
@@ -82,8 +124,11 @@
       id: 'current',
       label: 'Your scenario',
       bet: r.bet,
-      color: kind === 'pv' ? 'var(--lime)' : 'var(--pine)',
-      emphasis: true
+      // at the paper defaults, show the value as printed in the paper
+      betLabel: isDefault && !scenario.printedBet.startsWith('<') ? `${scenario.printedBet} yr` : undefined,
+      color: 'var(--text)',
+      emphasis: true,
+      group: 'Calculator'
     }
   ]);
 
