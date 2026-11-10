@@ -1,12 +1,12 @@
 # Solar vs Forest
 
+**Website: [kebasaa.github.io/SolarVsForest](https://kebasaa.github.io/SolarVsForest/)**
+
 An interactive explainer for
 
 > Stern R.\*, Muller J. D.\*, Rotenberg E., Amer M., Segev L., Yakir D. (2023).
 > **Photovoltaic fields largely outperform afforestation efficiency in global climate change mitigation strategies.**
 > *PNAS Nexus* 2(11), pgad352. https://doi.org/10.1093/pnasnexus/pgad352 (\* equal contribution)
-
-**Live site:** https://kebasaa.github.io/SolarVsForest/
 
 In drylands, a PV field offsets the warming caused by its darker surface (lower albedo) in about **2.5 years**. An
 afforestation takes **94–185 years**, more than 50× longer. The site walks through the field measurements (albedo,
