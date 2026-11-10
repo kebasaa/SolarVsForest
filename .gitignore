@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.vite/
+
+# generated from assets-src/ by `npm run images` (CI does this before building)
+public/img/
+.claude/

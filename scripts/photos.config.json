@@ -1,0 +1,191 @@
+{
+  "$comment": "Photos used on the site. `src` is relative to the originals folder (not in the repo). `maxWidth` caps the largest generated width. `focus` is the CSS object-position used when the image is cropped. Callout coordinates for HUD overlays live in src/lib/data/hud.ts.",
+  "license": "CC BY-NC 4.0",
+  "photos": [
+    {
+      "id": "hero-pv",
+      "src": "hero-pv.jpg",
+      "maxWidth": 2400,
+      "focus": "50% 62%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Drone view at sunset of the Ketura solar field: rows of blue panels on pale desert ground beneath the dark Edom mountains, with sun rays breaking through clouds.",
+      "original": "aerial_pv.jpg"
+    },
+    {
+      "id": "pv-context",
+      "src": "pv-context.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 55%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Wide aerial view of the Arava valley with the PV field between date-palm plantations and open desert.",
+      "original": "PV field/DJI_0676-HDR.jpg"
+    },
+    {
+      "id": "pv-desert-wide",
+      "src": "pv-desert-wide.jpg",
+      "maxWidth": 2400,
+      "focus": "50% 70%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Oblique drone view of the PV field surrounded by bare desert, the reference background for the measurements.",
+      "original": "PV field/DJI_0722-HDR.jpg"
+    },
+    {
+      "id": "forest-edge",
+      "src": "forest-edge.jpg",
+      "maxWidth": 2400,
+      "focus": "50% 60%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Aerial view of the edge of the Yatir pine forest, where planted forest meets the open semi-arid shrubland.",
+      "original": "forest/out/aerial_forest.jpg"
+    },
+    {
+      "id": "forest-aerial",
+      "src": "forest-aerial.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 60%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Yatir forest from above: thousands of Aleppo pines planted on the hills at the northern edge of the Negev desert.",
+      "original": "aerial_forest.jpg"
+    },
+    {
+      "id": "nadir-pv",
+      "src": "nadir-pv.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Straight-down drone image of the PV field: parallel rows of dark blue panels separated by strips of bright sandy soil.",
+      "original": "nadir_pv.jpg"
+    },
+    {
+      "id": "nadir-forest",
+      "src": "nadir-forest.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Straight-down drone image of the Yatir forest: dark green pine crowns and their shadows on brown ground.",
+      "original": "nadir_forest.jpg"
+    },
+    {
+      "id": "truck",
+      "src": "truck.jpg",
+      "maxWidth": 1600,
+      "focus": "40% 55%",
+      "credit": "Jonathan D. Müller",
+      "alt": "The Weizmann Institute's mobile eddy-covariance laboratory, a white four-wheel-drive truck, parked in the desert with its measurement mast in the background.",
+      "original": "truck_desert.jpg"
+    },
+    {
+      "id": "mast-desert",
+      "src": "mast-desert.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Jonathan D. Müller",
+      "alt": "The mobile measurement mast standing in the bare, stony desert background next to the PV field.",
+      "original": "system_desert.jpg"
+    },
+    {
+      "id": "mast-pv",
+      "src": "mast-pv.jpg",
+      "maxWidth": 960,
+      "focus": "50% 30%",
+      "credit": "Jonathan D. Müller",
+      "alt": "The measurement mast set up between the panel rows of the PV field, with sonic anemometer and radiometers at the top.",
+      "original": "system_pv1.jpg"
+    },
+    {
+      "id": "mast-pv-panels",
+      "src": "mast-pv-panels.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Drone view of the mast top above the tilted PV panels.",
+      "original": "system_pv2.jpg"
+    },
+    {
+      "id": "mast-pv-sensors",
+      "src": "mast-pv-sensors.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 40%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Close-up of the sensor head on the mast: sonic anemometer, gas analyser inlet, radiometers and temperature probe.",
+      "original": "system_pv3.jpg"
+    },
+    {
+      "id": "mast-pv-drone",
+      "src": "mast-pv-drone.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Jonathan D. Müller",
+      "alt": "The instrumented mast between PV rows at dusk, seen from a drone.",
+      "original": "PV field/DJI_0707-HDR.jpg"
+    },
+    {
+      "id": "tower-forest",
+      "src": "tower-forest.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 60%",
+      "credit": "Jonathan D. Müller",
+      "alt": "The permanent eddy-covariance flux tower rising above the Yatir forest canopy.",
+      "original": "system_forest.jpg"
+    },
+    {
+      "id": "tower-forest-work",
+      "src": "tower-forest-work.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 45%",
+      "credit": "Jonathan D. Müller",
+      "alt": "A researcher working on instruments at the top of the Yatir flux tower above the pine canopy.",
+      "original": "system_forest_work.jpg"
+    },
+    {
+      "id": "forest-canopy-nadir",
+      "src": "forest-canopy-nadir.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Top-down view of the Yatir flux tower among pine crowns.",
+      "original": "forest/out/DJI_0278-HDR.jpg"
+    },
+    {
+      "id": "pv-sunset",
+      "src": "pv-sunset.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 70%",
+      "credit": "Jonathan D. Müller",
+      "alt": "The PV field at sunrise beneath the mountains of the Arava valley.",
+      "original": "PV field/DJI_0689-HDR.jpg"
+    },
+    {
+      "id": "pv-rows",
+      "src": "pv-rows.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 60%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Low drone view along the PV panel rows towards Kibbutz Ketura.",
+      "original": "PV field/DJI_0649-HDR.jpg"
+    },
+    {
+      "id": "forest-landscape",
+      "src": "forest-landscape.jpg",
+      "maxWidth": 1600,
+      "focus": "50% 60%",
+      "credit": "Jonathan D. Müller",
+      "alt": "Dense green pine canopy of the Yatir forest stretching towards the desert hills.",
+      "original": "forest/out/IMG_0592.jpg"
+    },
+    {
+      "id": "fig1-art",
+      "src": "repo:assets-src/fig1-art.png",
+      "alpha": true,
+      "maxWidth": 1600,
+      "focus": "50% 50%",
+      "credit": "Adapted from Fig. 1, Stern, Muller et al. 2023, PNAS Nexus 2(11):pgad352 (CC BY 4.0)",
+      "license": "CC BY 4.0",
+      "quality": {
+        "avif": 70,
+        "webp": 86
+      },
+      "alt": "Isometric illustration adapted from Fig. 1 of the paper: a desert block with a PV field (D) and its desert background (C), and a pine forest (B) with its desert background (A). Coloured arrows above each surface show reflected sunlight, thermal emission, sensible heat, latent heat and carbon flux; a thermometer marks the cooler forest surface."
+    }
+  ]
+}

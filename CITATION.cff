@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this website or its numbers, please cite the paper below."
+title: "Solar vs Forest: interactive explainer"
+type: software
+license: GPL-3.0-or-later
+repository-code: "https://github.com/kebasaa/SolarVsForest"
+url: "https://kebasaa.github.io/SolarVsForest/"
+authors:
+  - family-names: Muller
+    given-names: Jonathan D.
+preferred-citation:
+  type: article
+  title: "Photovoltaic fields largely outperform afforestation efficiency in global climate change mitigation strategies"
+  authors:
+    - family-names: Stern
+      given-names: Rafael
+    - family-names: Muller
+      given-names: Jonathan D.
+    - family-names: Rotenberg
+      given-names: Eyal
+    - family-names: Amer
+      given-names: Madi
+    - family-names: Segev
+      given-names: Lior
+    - family-names: Yakir
+      given-names: Dan
+  journal: "PNAS Nexus"
+  volume: 2
+  issue: 11
+  start: pgad352
+  year: 2023
+  doi: "10.1093/pnasnexus/pgad352"
+  url: "https://academic.oup.com/pnasnexus/article/2/11/pgad352/7429362"

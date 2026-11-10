@@ -1,0 +1,304 @@
+{
+  "hero-pv": {
+    "width": 2400,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "fallback": "jpg",
+    "focus": "50% 62%",
+    "alt": "Drone view at sunset of the Ketura solar field: rows of blue panels on pale desert ground beneath the dark Edom mountains, with sun rays breaking through clouds.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBQCdASoYABgAPu1mqE2ppaOiMBgMATAdiWIAqRUgAPlWJUEPa7pzQi5i3EtjgFlutoAA/tcV1zagy93+Qh87oMg98WSnwYnbUG5FI1WzCZdnp8cxaeOIfSPwZLxt9FZyjWZWjgA54ySp7FdJL1ZO6OB+2kj0XtZYFegA"
+  },
+  "pv-context": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 55%",
+    "alt": "Wide aerial view of the Arava valley with the PV field between date-palm plantations and open desert.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABIAPu1kqU2ppaQiMAgBMB2JQBdgA81L/KXRiKDyMBvpuCAA/Fyen5ScCckGO24uUE7yD30Gh5ltH/clqYyjmDlrd+RVwIELJNGh1vEfRSq/kGQZBkSYnTd2KmhylQj24ZngAAA="
+  },
+  "pv-desert-wide": {
+    "width": 2400,
+    "height": 1799,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "fallback": "jpg",
+    "focus": "50% 70%",
+    "alt": "Oblique drone view of the PV field surrounded by bare desert, the reference background for the measurements.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoYABIAPu1oq02ppiQiMAgBMB2JYgC1IUAAoFnuKYSAAPCobkTZ4On0H+eWDl6mFolTroNe6DdmnzBezPwJpEaWet3/TS8zfAAAAA=="
+  },
+  "forest-edge": {
+    "width": 2400,
+    "height": 1599,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "fallback": "jpg",
+    "focus": "50% 60%",
+    "alt": "Aerial view of the edge of the Yatir pine forest, where planted forest meets the open semi-arid shrubland.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoYABAAPu1krU6ppaSiMAgBMB2JZACdGuAAWZhoHsL8J8uAAP5a9pU34dN+CL0mXwC9PLNloMdvmtasfMsR02sVIpdO4mM2nKnXwAAA"
+  },
+  "forest-aerial": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 60%",
+    "alt": "Yatir forest from above: thousands of Aleppo pines planted on the hills at the northern edge of the Negev desert.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoYABAAPu1orU2ppqSiMAgBMB2JQBOgBD0DldscLm8AAP7EXKb8bQ2np9YLHiLWX1oEx1VUXTJDKYwD9VlPex5Vc/bO8oYAAAA="
+  },
+  "nadir-pv": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 50%",
+    "alt": "Straight-down drone image of the PV field: parallel rows of dark blue panels separated by strips of bright sandy soil.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAwCdASoYABIAPuFeqk2opSQiMAwBEBwJY2u4RhZkAf8CUwAA/uMIm+SyDDluBLvDo1MzHd3c6sY1DRozlQq7tVOYrMk24+vvAFElCIwAAA=="
+  },
+  "nadir-forest": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 50%",
+    "alt": "Straight-down drone image of the Yatir forest: dark green pine crowns and their shadows on brown ground.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBQCdASoYABIAPu1or1AppaSiqAqpMB2JYwCsABI+ZD/yeMPCXkuSgC3NkwDSPCUAAP7jZSgjW7pV06EufpDK1M4c55GoVxLRy1IR2CaF7TJcH+bV7AgXdBVS7AAUA2r8HwtWAAA="
+  },
+  "truck": {
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "40% 55%",
+    "alt": "The Weizmann Institute's mobile eddy-covariance laboratory, a white four-wheel-drive truck, parked in the desert with its measurement mast in the background.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoYABAAPu1kq04ppaQiMAgBMB2JZACdMoAC+WrGNGEsS44j2GAAn1paWh8PT3thgH6qbz503KJ3CzD58t+joCSir5fp7CwvaO5WFvfd7lj6iQiYAAA="
+  },
+  "mast-desert": {
+    "width": 1600,
+    "height": 1200,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 50%",
+    "alt": "The mobile measurement mast standing in the bare, stony desert background next to the PV field.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoYABIAPu1kqE2zpaOiMAgCcB2JQBYdg8ffPiZc1e6gAP0g7Y6q0SrGJzRka0Moq3Fo5yIuGHRb7pmBT74t5qevrmeqC9yuEmAAAA=="
+  },
+  "mast-pv": {
+    "width": 960,
+    "height": 1975,
+    "widths": [
+      480,
+      960
+    ],
+    "fallback": "jpg",
+    "focus": "50% 30%",
+    "alt": "The measurement mast set up between the panel rows of the PV field, with sonic anemometer and radiometers at the top.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBQCdASoYADEAPulkp02pJiOiM/mYASAdCWMAyQf8AcXJd5EJ95hhzyisPbhQD0/2FgAA/FLbz0OetyKbDU59B91oL/KobF5qrbJd/3eI/X17/B6ihN8BAFTzCAcQYWqci4dflQw+GLPswJAyu2xDB2t2+M5ocIEHBqUJBVhFSwAAAAA="
+  },
+  "mast-pv-panels": {
+    "width": 1600,
+    "height": 2133,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 50%",
+    "alt": "Drone view of the mast top above the tilted PV panels.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBQCdASoYACAAPu1iqE2ppaOiMAgBMB2JYwC3uGlfE5s+0CE13OuuhfF0TakGXw2AAP79+uZQ7sTcw7idsQOyvjy3uoxn0uTnbYRKY6LpfkCxmr0sVm1y/AiSKgkujkPdUm4GN4TGIZAA"
+  },
+  "mast-pv-sensors": {
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 40%",
+    "alt": "Close-up of the sensor head on the mast: sonic anemometer, gas analyser inlet, radiometers and temperature probe.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBgCdASoYACQAPt1apE2opSOiNVv8ARAbiWQAnTLLUBItAZaEHNvg0GulyFyj1qYzud50qohQ+wqJPAAA3RwaEzNKityRQS49xuXURB78cvfVHhpfw4OitffYPL3wMnp5Menr25SfqXsPUJ0kkR00bDZDEp1lbcQfCSVVsR89UyyCvGV8GzCgAYoYghn5BIN4UEWqivmNUoz1YBZcqSLpNG/egAAA"
+  },
+  "mast-pv-drone": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 50%",
+    "alt": "The instrumented mast between PV rows at dusk, seen from a drone.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQBACdASoYABIAPu1mqk2ppaQiMAgBMB2JZQCxHwnDSShV7Py5FxhwOMoAAP7FTvqc8WvQdJ7mSbZW5TvEFV3kVthuPwUxSnU0FlFvLoP02/A3zQEnYaZHE+r3VvCAmQAAAA=="
+  },
+  "tower-forest": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 60%",
+    "alt": "The permanent eddy-covariance flux tower rising above the Yatir forest canopy.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoYABIAPu1iqU2ppaOiMAgBMB2JZACsACHWqmiDZUqE0NfDEQBaAYAA96Tyf44iMH3Y0HI/Lu9jfXUktvix4SU7hB7Cge3QjZD9Q4vZJLRZhKC777WJul4fLyDwZ8mpu7OcqjgA"
+  },
+  "tower-forest-work": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 45%",
+    "alt": "A researcher working on instruments at the top of the Yatir flux tower above the pine canopy.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoYABIAPuleo02pJS8iMAwB4B0JQBdgBDuN3s9zvZtYh5UAAP7v+8kYlfxNeDJXU0InXHvaf7+aFHjGxghXS4ztIdk5GrLNABZuYwbPmEmWaZyqFXylSQvnl3SS6xcTAAA="
+  },
+  "forest-canopy-nadir": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 50%",
+    "alt": "Top-down view of the Yatir flux tower among pine crowns.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQBACdASoYABIAPu1wsFKppiSiqAgBMB2JQBdgAStGvP5cwRlvpUZ4Rfj7N1u+AAD+F+6oYm2ckEhj5TfauLiMMXCHuGjb7SBz/Q1WQ6R2lKBAsczoZlXA9iQA2cBKIEwEG8mzGaK6SQj1Krcq298+oewbBOJSAAA="
+  },
+  "pv-sunset": {
+    "width": 1600,
+    "height": 2135,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 70%",
+    "alt": "The PV field at sunrise beneath the mountains of the Arava valley.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoYACAAPu1iqE2ppaOiMAgBMB2JQAALLwhzZIIng5GUlZ19mPUAAPyBr04HENvyI1Kcw9wk9/xG/CGgll7l33qIg0q/iJg7trKjWpX7bc50dKcLTe9KE7bhdtzDyp4qJo4tu8E1+2DMtefcAAA="
+  },
+  "pv-rows": {
+    "width": 1600,
+    "height": 1199,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 60%",
+    "alt": "Low drone view along the PV panel rows towards Kibbutz Ketura.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBQCdASoYABIAPu1iqE2ppaOiMAgBMB2JQBOmUFBVAWmarhs3sxHcFZ/G/QE2PapmAAD3nQxpFHpV1qgk/YuR96fGLnQ2qtFyRQ6gnUSUbl797MwJxls3a/XHTWexOO6kl3/EcGYiYs8AAAA="
+  },
+  "forest-landscape": {
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "fallback": "jpg",
+    "focus": "50% 60%",
+    "alt": "Dense green pine canopy of the Yatir forest stretching towards the desert hills.",
+    "credit": "Jonathan D. Müller",
+    "license": "CC BY-NC 4.0",
+    "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoYABAAPu1yrU+pp6QiMAgBMB2JQBOkH+BgTeQFZa+88RwA/ueFOXOCdrUXEAcsA0UXplLT9LIzENxXS+gR9GMcDsAAAA=="
+  },
+  "fig1-art": {
+    "width": 1478,
+    "height": 1064,
+    "widths": [
+      480,
+      960,
+      1478
+    ],
+    "fallback": "png",
+    "focus": "50% 50%",
+    "alt": "Isometric illustration adapted from Fig. 1 of the paper: a desert block with a PV field (D) and its desert background (C), and a pine forest (B) with its desert background (A). Coloured arrows above each surface show reflected sunlight, thermal emission, sensible heat, latent heat and carbon flux; a thermometer marks the cooler forest surface.",
+    "credit": "Adapted from Fig. 1, Stern, Muller et al. 2023, PNAS Nexus 2(11):pgad352 (CC BY 4.0)",
+    "license": "CC BY 4.0",
+    "placeholder": "data:image/webp;base64,UklGRjoCAABXRUJQVlA4WAoAAAAQAAAAFwAAEAAAQUxQSCwBAAANuYzof2ikKcCbiJLr+t7/ju4ul/hK17chA/OrIV0rhMDTgRaelogJyJX4tOodJQDr9mx65Rl67p63rtsFAOT6mrLTmg2uy1O27Zr4AgAhpzdS6t1dOCVQ2RECQLJFwqgcS0Sr5qeRlBWgqfNjCafThPp9+N99YlaASPBSknmOnB75zvv7aE3cAVELfnqDa63GXZAXi187wUVD3Jf2feHpq3DI34fPRSQWaq3xyCh+Ssxqw3zq8jVaHYE5CokQqPu4yKX4hLooRAAiEMM7LY1iQGgKgQoAMJvG031NtmQtc2+NFWC2xlLumq2OPOzojq/I1gKbBZTTufRUsz8z4tHfU+FUa9C4f3ram7XQesuGaT6a8n3fcc1RF6glEDtrzuzzkdxXT2/axwiBlQBWUDgg6AAAAHAFAJ0BKhgAEQA+7WqvUCmlpKKoCqkwHYlsAJ0yhHAQaB6AACGM3t9/cpicDki+cj5TlAAA/h3dzZ+WYiY1YMYsFtvwe08oDY/NRjllv7ABYSpwA5parmwW24pza/32X35EWNkmCoyv15NxEjDokjM44uttBQWF2mlRUk4ngMkUC322nV7L40kMMLTgVN55CCyzh/ycfvX8vYsus2eax0D4wHvxEprmd//ycmWWZ/Typndkehc6/+mxRIM46Cs9dX1084b5wfPrSl8qZAEZOMX+346Y5P8Zlupl+UPj/g2w/NQ+P+DWkAA="
+  }
+}

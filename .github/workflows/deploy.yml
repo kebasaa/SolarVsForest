@@ -1,0 +1,65 @@
+name: Test, build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Unit tests (model reproduces the paper's tables)
+        run: npm test
+
+      - name: Type check
+        run: npm run check
+
+      - name: Cache generated images
+        uses: actions/cache@v6
+        with:
+          path: public/img
+          key: img-${{ hashFiles('assets-src/**', 'scripts/photos.config.json', 'scripts/optimize-images.mjs') }}
+
+      - name: Generate responsive images
+        run: |
+          if [ -z "$(ls -A public/img 2>/dev/null)" ]; then npm run images; else echo "using cached images"; fi
+
+      - name: Build
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v5
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
