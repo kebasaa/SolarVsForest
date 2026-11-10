@@ -50,7 +50,7 @@
     'tower-forest-work': 'Tower maintenance',
     'forest-canopy-nadir': 'Tower from above',
     'pv-rows': 'Panel rows',
-    'pv-sunset': 'Arava sunrise',
+    'pv-sunset': 'Arava sunset',
     'forest-landscape': 'Yatir canopy'
   };
 </script>
