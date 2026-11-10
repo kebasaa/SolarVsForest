@@ -9,13 +9,18 @@ on:
 permissions:
   contents: read
 
+# Deployments to Pages run one at a time and are never cancelled half-way
+# (a cancelled deployment can leave Pages stuck); PR checks may cancel each other.
 concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.ref) || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write # actions/configure-pages reads the Pages site configuration
     steps:
       - uses: actions/checkout@v7
 
@@ -45,8 +50,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - uses: actions/upload-pages-artifact@v5
+      - name: Configure Pages
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
@@ -61,5 +71,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          # the first deployment after enabling Pages can take longer than the 10-minute default
+          timeout: 1800000
