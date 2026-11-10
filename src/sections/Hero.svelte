@@ -48,9 +48,11 @@
           <div class="cap">more than 50× longer</div>
         </div>
         <div class="stat panel ticks" style:--acc="var(--cyan)">
-          <div class="label">Carbon per m² and year</div>
+          <div class="label">Carbon benefit per m² and year</div>
           <div class="num v">~<CountUp to={100} />×<span class="unit">PV vs forest</span></div>
-          <div class="cap">14.9 vs 0.15 kgC m⁻² yr⁻¹</div>
+          <div class="cap">
+            PV avoids 14.9 kgC m⁻² yr⁻¹ of fossil emissions; the forest absorbs 0.15 kgC m⁻² yr⁻¹
+          </div>
         </div>
       </div>
     </div>
@@ -175,9 +177,6 @@
   @media (max-width: 560px) {
     .stats {
       grid-template-columns: 1fr;
-    }
-    .stat .cap {
-      display: none;
     }
   }
 </style>

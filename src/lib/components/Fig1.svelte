@@ -102,8 +102,8 @@
       }
       case 'C':
         return l.surface === 'pv'
-          ? { v: fmt(TABLE2.ces.world, 1), u: 'kgC m⁻² yr⁻¹', tip: 'Carbon emissions suppressed by the PV field (world fuel mix)' }
-          : { v: fmt(TABLE2.forestSink[0], 2), u: 'kgC m⁻² yr⁻¹', tip: 'Carbon sequestered by the Yatir forest' };
+          ? { v: fmt(TABLE2.ces.world, 1), u: 'kgC m⁻² yr⁻¹', tip: 'Fossil carbon emissions avoided by the PV field’s electricity (world fuel mix), per m² of field and year' }
+          : { v: fmt(TABLE2.forestSink[0], 2), u: 'kgC m⁻² yr⁻¹', tip: 'Carbon absorbed (sequestered) by the Yatir forest, per m² and year' };
       case 'Ts': {
         const d = TABLE1.forest.Ts.mean - TABLE1.forestDesert.Ts.mean;
         return { v: `−${HEADLINE.forestCooling}`, u: '°C', tip: `Forest surface ${TABLE1.forest.Ts.mean} °C vs desert ${TABLE1.forestDesert.Ts.mean} °C (Δ ${fmt(d, 1)} °C)` };

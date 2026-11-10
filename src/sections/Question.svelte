@@ -18,13 +18,13 @@
       n: '01',
       acc: 'amber',
       title: 'A darker surface',
-      text: 'Bright desert reflects a lot of sunlight. Panels and pine canopies are dark, so the land absorbs more energy. That is a positive radiative forcing (RFr): a one-off step that warms the planet for as long as the land cover stays.'
+      text: 'Bright desert reflects a lot of sunlight. Panels and pine canopies are dark, so the land absorbs more energy. That is a positive radiative forcing (RFr, i.e. extra heat kept by the planet): a one-off step that warms it for as long as the land cover stays.'
     },
     {
       n: '02',
       acc: 'lime',
       title: 'A carbon benefit, every year',
-      text: 'A PV field suppresses fossil emissions each year it runs; a forest takes carbon out of the air each year it grows. Either way, every year adds a bit more negative forcing (RFc).'
+      text: 'A PV field avoids fossil emissions each year it runs; a forest takes carbon out of the air each year it grows. Either way, every year adds a bit more negative forcing (RFc: less CO₂ traps less heat, so it cools).'
     },
     {
       n: '03',
@@ -40,7 +40,7 @@
     <SectionHeader index="01" kicker="The question" title="Two dark surfaces">
       <p>
         Drylands cover a huge share of Earth's land, and they are where land is still available for two major
-        climate-mitigation strategies: <strong>solar PV fields</strong> and <strong>afforestation</strong>. But both
+        climate-mitigation strategies: <strong>solar PV fields</strong> and <strong>afforestation</strong> (planted forest). But both
         replace a bright, reflective surface with a dark one.
       </p>
     </SectionHeader>

@@ -108,7 +108,7 @@ describe('Table 3 — climate zones, reproduced at preset defaults', () => {
     expectPrinted(EPA_KETURA / TABLE3.drylands.pv.Eg_kWh, TABLE3.drylands.pv.landEff, 2);
   });
 
-  it('PV ~100× more carbon per m² than the Yatir forest (14.9 vs 0.15)', () => {
+  it('PV avoids ~100× more carbon per m² than the Yatir forest absorbs (14.9 vs 0.15)', () => {
     const ratio = computeBet(pvDrylands('world')).ces / FOREST_YATIR.inputs.sink;
     expect(ratio).toBeGreaterThan(95);
     expect(ratio).toBeLessThan(105);

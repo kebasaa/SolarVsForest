@@ -157,7 +157,7 @@
           </div>
           <div class="outs">
             <div class="o">
-              <div class="label">{kind === 'pv' ? 'Emissions suppressed (CES)' : 'Carbon sequestered'}</div>
+              <div class="label">{kind === 'pv' ? 'Emissions avoided (CES)' : 'Carbon absorbed by the forest'}</div>
               <div class="num c-lime">{fmt(r.ces, kind === 'pv' ? 1 : 2)}<span class="unit">kgC m⁻² yr⁻¹</span></div>
             </div>
             <div class="o">
@@ -348,14 +348,22 @@
     background: var(--panel-solid);
     padding: 10px 12px;
     min-width: 0;
+    container-type: inline-size;
   }
   .o.wide {
     grid-column: 1 / -1;
   }
+  /* the value is always shown in full (font scales with the cell); only the unit may be cut off */
   .o .num {
-    font-size: var(--step-0);
+    display: flex;
+    align-items: baseline;
+    min-width: 0;
+    font-size: clamp(0.72rem, 7cqw, 1.05rem);
     margin-top: 4px;
     white-space: nowrap;
+  }
+  .o .num :global(.unit) {
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
   }

@@ -42,7 +42,7 @@
         ['Canopy cover', '50', '%'],
         ['Altitude', '600–850', 'm'],
         ['Flux tower', 'since 2001', ''],
-        ['Carbon sink', '0.15', 'kgC m⁻² yr⁻¹'],
+        ['Carbon absorbed', '0.15', 'kgC m⁻² yr⁻¹'],
         ['Albedo', '0.12', 'annual']
       ],
       text: 'A planted Pinus halepensis forest at the northern edge of the Negev desert, monitored with a permanent eddy-covariance tower. Its surroundings are open shrubland, the "desert background".'
@@ -143,6 +143,7 @@
   }
   .body {
     padding: 18px;
+    container-type: inline-size;
   }
   .clim {
     color: var(--acc);
@@ -159,16 +160,26 @@
   .fact {
     background: var(--panel-solid);
     padding: 10px 10px;
+    container-type: inline-size;
+    min-width: 0;
   }
+  /* the value is always shown in full (font scales with the cell); only the unit may be cut off */
   dd {
+    display: flex;
+    align-items: baseline;
+    min-width: 0;
     margin: 4px 0 0;
-    font-size: var(--step-0);
+    font-size: clamp(0.72rem, 10.5cqw, 1.05rem);
     color: var(--text);
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  }
+  dd .num {
+    flex: none;
   }
   dd .unit {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 0.62em;
   }
   .body p {
@@ -179,14 +190,15 @@
     margin-top: 22px;
     font-size: var(--step--1);
   }
-  @media (max-width: 1100px) {
-    .facts {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   @media (max-width: 900px) {
     .grid {
       grid-template-columns: 1fr;
+    }
+  }
+  /* four columns only when the card is wide enough for readable values */
+  @container (max-width: 600px) {
+    .facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 </style>

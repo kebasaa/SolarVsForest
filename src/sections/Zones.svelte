@@ -98,7 +98,7 @@
           <dl>
             <div><dt class="label">Albedo, forest vs background</dt><dd class="mono">{t.forest.albedo} / {t.forest.background}</dd></div>
             <div><dt class="label">Δα</dt><dd class="mono c-amber">{t.forest.dAlbedo}</dd></div>
-            <div><dt class="label">Carbon sequestration</dt><dd class="mono c-lime">{t.forest.sink} <small>kgC m⁻² yr⁻¹</small></dd></div>
+            <div><dt class="label">Carbon absorbed</dt><dd class="mono c-lime">{t.forest.sink} <small>kgC m⁻² yr⁻¹</small></dd></div>
             <div><dt class="label">Land needed vs available</dt><dd class="mono">{t.forest.requiredMkm2} / {t.forest.availableMkm2} <small>Mkm²</small></dd></div>
           </dl>
         </article>
@@ -108,7 +108,7 @@
           <dl>
             <div><dt class="label">Albedo, PV field vs background</dt><dd class="mono">{t.pv.albedo} / {t.pv.background}</dd></div>
             <div><dt class="label">Δα</dt><dd class="mono c-amber">{t.pv.dAlbedo}</dd></div>
-            <div><dt class="label">Emissions suppressed (world mix)</dt><dd class="mono c-lime">{t.pv.ces} <small>kgC m⁻² yr⁻¹</small></dd></div>
+            <div><dt class="label">Emissions avoided (world mix)</dt><dd class="mono c-lime">{t.pv.ces} <small>kgC m⁻² yr⁻¹</small></dd></div>
             <div><dt class="label">Land needed</dt><dd class="mono">{t.pv.requiredMkm2} <small>Mkm²</small></dd></div>
             <div><dt class="label">Land efficiency · panel efficiency</dt><dd class="mono">{t.pv.landEff} · {t.pv.panelEff}</dd></div>
             <div><dt class="label">EPa · irradiance</dt><dd class="mono">{t.pv.EPa} · {fmt(t.pv.Eg_kWh)} <small>kWh m⁻² yr⁻¹</small></dd></div>
